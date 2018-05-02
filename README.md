@@ -1,7 +1,20 @@
 # yummy_back
 
 PHP-Slim-Yummy
-```
+
+In apache, you need to activate headers_module
+
+and in vhosts conf file, you need to adapt the configuration for the directory of back application :
+
+Options Indexes FollowSymLinks MultiViews
+AllowOverride all
+Require all granted
+
+______________________________________
+
+DB init :
+
+
 -- phpMyAdmin SQL Dump
 -- version 4.6.4
 -- https://www.phpmyadmin.net/
@@ -229,4 +242,4 @@ ALTER TABLE `users`
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-```
+
